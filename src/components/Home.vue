@@ -1,7 +1,7 @@
 <template>
-  <v-layout row wrap style="height: 100%">
-    <v-flex xs12 sm6 md6 lg6 class="side">
-      <v-card elevation="0" max-width="80%" class="mx-auto">
+  <v-layout row wrap style="height: 100%" >
+    <v-flex xs12 sm6 md6 lg6 class="side ">
+      <v-card elevation="0" max-width="80%" class="ma-auto">
       <h1 class="pb-1 robob" style="color:black" >
         Design is all about<br />
         Connecting dots.
