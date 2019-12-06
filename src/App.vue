@@ -1,30 +1,27 @@
 <template>
   <v-app>
-    <div class="page-container">
-      <div class="fullpage-container">
-        <div class="fullpage-wp" v-fullpage="opts" ref="example">
-          <div class="page-1 page">
-            <Home />
-          </div>
-
-          <div class="page-2 page">
-            <About />
-          </div>
-
-          <div class="page-3 page">
-            <Projects />
-          </div>
-
-          <div class="page-4 page">
-             <Team />
-          </div>
-          <div class="page-5 page">
-             <Contact />
-          </div>
-        </div>
-        <button @click="moveNext">next</button>
-      </div>
+    <full-page ref="fullpage" :options="options" id="fullpage">
+    <div class="section">
+      <!-- <button class="next" @click="$refs.fullpage.api.moveSectionDown()">Next</button> -->
+      <Home />
     </div>
+    <div class="section">
+      <!-- <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button> -->
+      <About />
+    </div>
+     <div class="section">
+      <!-- <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button> -->
+      <Projects />
+    </div>
+     <div class="section">
+      <!-- <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button> -->
+      <Team />
+    </div>
+    <div class="section">
+      <!-- <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button> -->
+      <Contact />
+    </div>
+  </full-page>
   </v-app>
 </template>
 

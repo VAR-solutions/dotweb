@@ -1,14 +1,14 @@
 <template>
   <v-layout row wrap style="height: 100%">
-    <v-flex xs12 sm6 md6 lg6 class="side">
+    <v-flex xs12 sm6 md6 lg6 class="d-flex align-center">
       <v-card elevation="0" max-width="80%" class="mx-auto">
-        <h1 class="pb-1 robob" style="color:black">
+        <h1 class="pb-1 robob siz" style="color:black">
           We would Love to
           <br />hear from you
         </h1>
 
         <p
-          class="pt-3 robo"
+          class="pt-3 robo siz1"
         >In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used before final copy is available, but it may also be used to temporarily replace copy in a process called greeking, which allows designers to consider form without the meaning of the text influencing the design.</p>
       </v-card>
     </v-flex>
@@ -116,7 +116,8 @@ export default {
     emailRules: [
       v => !!v || "E-mail is required",
       v => /.+@.+\..+/.test(v) || "E-mail must be valid"
-    ]
+    ],
+    message: ""
   }),
 
   methods: {
