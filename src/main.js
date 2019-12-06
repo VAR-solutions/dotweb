@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
-import 'animate.css'
-import 'fullpage-vue/src/fullpage.css'
-import VueFullpage from 'fullpage-vue'
-Vue.use(VueFullpage)
+import 'animate.css';
+import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
+import VueFullPage from 'vue-fullpage.js';
+
+Vue.use(VueFullPage)
 
 Vue.config.productionTip = false
 

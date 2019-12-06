@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-sm align-content-space-between>
-    <v-layout wrap>
-      <v-flex v-for="k in 8" :key="k" xs3 sm3 md3 id="scroll-target" style="max-height: 530px" class="overflow-y-auto">
+    <v-layout>
+      <v-flex xs3 md3 lg3>
         <Member />
       </v-flex>
     </v-layout>
@@ -9,12 +9,17 @@
 </template>
 
 <script>
-import Member from './Member';
+import Member from "./Member";
 export default {
-    name: "Members",
-    components:{
-        Member
-    }
-    
-}
+  name: "Members",
+  components: {
+    Member
+  }
+};
 </script>
+
+<style>
+.scroll {
+  overflow-y: auto;
+}
+</style>
