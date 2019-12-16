@@ -12,8 +12,8 @@
       </template>
       hello from dialog
     </v-dialog>
-    <v-card-text class="mt-3" justify="center" align="center" style="color: white"> Name</v-card-text>
-    <!-- <p class="mt-3" justify="center" align="center" style="color: white">Name</p> -->
+    <!-- <v-card-text class="mt-1" justify="center" align="center" style="color: white"> Name</v-card-text> -->
+    <p class="mt-3" justify="center" align="center" style="color: white">Name</p>
   </v-card>
 </template>
 

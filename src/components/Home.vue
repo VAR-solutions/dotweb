@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap style="height: 100%">
-    <v-flex xs12 sm6 md6 lg6 class="d-flex align-center" >
+    <v-flex xs12 sm6 md6 lg6 class="d-flex align-center side">
       <v-card elevation="0" max-width="80%" class="mx-auto">
         <h1 class="pb-1 robob siz" style="color:black">
           Design is all about
@@ -11,31 +11,39 @@
       </v-card>
     </v-flex>
     <v-flex xs12 sm6 md6 lg6>
+      <v-card height="100%">
       <v-img style="height: 100%" aspect-ratio src="../assets/home.jpg"></v-img>
+      </v-card>
     </v-flex>
   </v-layout>
 </template>
 <script>
 export default {
-  data () {
-    return {
-
-    }
+  data() {
+    return {};
   },
   methods: {
-    movetowork(){
+    movetowork() {
       fullpage_api.moveTo(3);
-      
     }
   }
-}
+};
 </script>
 
 <style>
-.siz{
+.siz {
   font-size: 2.8em;
 }
-.siz1{
+.siz1 {
   font-size: 1.3em;
+}
+
+@media screen and (max-width: 1000px) {
+  .siz {
+    font-size: 1.0em;
+  }
+  .siz1 {
+    font-size: 0.5em;
+  }
 }
 </style>

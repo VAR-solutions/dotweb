@@ -84,6 +84,7 @@ export default {
 }
 .side {
   height: 100%;
+  background-color: white;
 }
 
 @media screen and (max-width: 700px) {
@@ -91,4 +92,6 @@ export default {
     height: 50%;
   }
 }
+
+
 </style>

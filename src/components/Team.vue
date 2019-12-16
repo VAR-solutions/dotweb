@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap style="height: 100%">
-    <v-flex xs12 sm6 md6 lg6 class="d-flex align-center">
+    <v-flex xs12 sm6 md6 lg6 class="d-flex align-center side">
       <v-card elevation="0" max-width="80%" class="mx-auto">
         <h1 class="pb-1 robob siz" style="color:black">
           Meet our
@@ -12,7 +12,8 @@
         >In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used before final copy is available, but it may also be used to temporarily replace copy in a process called greeking, which allows designers to consider form without the meaning of the text influencing the design.</p>
       </v-card>
     </v-flex>
-    <v-flex xs12 sm6 md6 lg6 style="height: 100% ; background: #404040">
+    <v-flex xs12 sm6 md6 lg6 >
+      <v-card style="height: 100% ; background: #404040">
       <v-container grid-list-sm align-content-space-between>
         <v-layout wrap>
           <v-flex v-for="k in 3" :key="k" xs4 sm4 md4>
@@ -26,7 +27,7 @@
               <v-dialog v-model="dialog" dark >
                 <template v-slot:activator="{ on }">
                   <v-layout align-center justify-center pt-4>
-                    <v-avatar size="100">
+                    <v-avatar size="80">
                       <img
                         v-on="on"
                         src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
@@ -40,7 +41,7 @@
               <p class="mt-3" justify="center" align="center" style="color: white">Name</p>
 
               <p
-                style="font-size: 0.8em; margin-top: -8%; color:white"
+                style="font-size: 0.8em; margin-top: -9%; color:white"
                 justify="center"
                 align="center"
               >Designation</p>
@@ -48,10 +49,12 @@
           </v-flex>
         </v-layout>
       </v-container>
+    
 
       <hr class="mx-auto" style="color: white; border: 0.5px solid white; width: 80%;" />
 
       <Members />
+      </v-card>
     </v-flex>
   </v-layout>
 </template>
